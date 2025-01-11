@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+@keyframes expand {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Expands to 110% of original size */
+  }
+  100% {
+    transform: scale(1); /* Returns to original size */
+  }
+}
