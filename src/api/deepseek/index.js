@@ -22,7 +22,6 @@ class DeepSeek {
                 })
             }
 
-            debugger
             let response = await fetch(import.meta.env.VITE_DEEP_SEEK_API, {
                 method: 'POST',
                 headers: {
