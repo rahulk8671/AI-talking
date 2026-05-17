@@ -10,9 +10,9 @@ import Gemini from './api/Gemini';
 import DeepSeek from './api/deepseek'
 
 function App() {
-	const gemini = useMemo(() => new DeepSeek(), []);
-	const gemini1 = useMemo(() => new DeepSeek(), []);
-	const gemini2 = useMemo(() => new DeepSeek(), []);
+	const gemini = useMemo(() => new Gemini(), []);
+	const gemini1 = useMemo(() => new Gemini(), []);
+	const gemini2 = useMemo(() => new Gemini(), []);
 	
 	const { speak, isSpeaking, cancelSpeaking } = useSpeechSynthesis();
 	const { speak: speak1, isSpeaking: isSpeaking1, cancelSpeaking: cancelSpeaking1 } = useSpeechSynthesis();
